@@ -14,6 +14,8 @@
 		4A31B2291D84900F007ED530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A31B2271D84900F007ED530 /* LaunchScreen.storyboard */; };
 		4A31B2341D84900F007ED530 /* Perfect_Shots_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A31B2331D84900F007ED530 /* Perfect_Shots_2Tests.swift */; };
 		4A31B23F1D84900F007ED530 /* Perfect_Shots_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A31B23E1D84900F007ED530 /* Perfect_Shots_2UITests.swift */; };
+		4A31B24D1D849039007ED530 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A31B24C1D849039007ED530 /* MessageUI.framework */; };
+		4A31B24F1D849042007ED530 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A31B24E1D849042007ED530 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		4A31B23A1D84900F007ED530 /* Perfect Shots 2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Perfect Shots 2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A31B23E1D84900F007ED530 /* Perfect_Shots_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfect_Shots_2UITests.swift; sourceTree = "<group>"; };
 		4A31B2401D84900F007ED530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A31B24C1D849039007ED530 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		4A31B24E1D849042007ED530 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A31B24F1D849042007ED530 /* MobileCoreServices.framework in Frameworks */,
+				4A31B24D1D849039007ED530 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +83,8 @@
 		4A31B2121D84900F007ED530 = {
 			isa = PBXGroup;
 			children = (
+				4A31B24E1D849042007ED530 /* MobileCoreServices.framework */,
+				4A31B24C1D849039007ED530 /* MessageUI.framework */,
 				4A31B21D1D84900F007ED530 /* Perfect Shots 2 */,
 				4A31B2321D84900F007ED530 /* Perfect Shots 2Tests */,
 				4A31B23D1D84900F007ED530 /* Perfect Shots 2UITests */,
@@ -193,6 +201,7 @@
 				TargetAttributes = {
 					4A31B21A1D84900F007ED530 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6KH74DZ9CK;
 					};
 					4A31B22E1D84900F007ED530 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -401,10 +410,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Perfect Shots 2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "AM.Perfect-Shots-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +424,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Perfect Shots 2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "AM.Perfect-Shots-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
